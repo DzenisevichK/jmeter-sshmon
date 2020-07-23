@@ -75,7 +75,7 @@ public class SSHMonSampler
 
             channel = (ChannelExec)session.openChannel("exec");
             channel.setCommand(remoteCommand);
-            channel.setPty(true);
+            // channel.setPty(true);
             channel.setOutputStream(result);
             channel.connect();
 
